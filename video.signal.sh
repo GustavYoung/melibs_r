@@ -39,7 +39,7 @@ then
         boxed="--win 0,0,1280,720";
 elif [ "$resolution" == "$c" ]; 
 then
-        boxed="--win 23,37,695,443";
+        boxed="--win 0,15,720,465";
 elif [ "$resolution" == "$d" ]; 
 then
         exit;
