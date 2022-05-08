@@ -16,7 +16,7 @@ reset=`tput sgr0`
 #echo "${red}red text ${green}green text${reset}"
 
 sleep 1;
-SERVICE="melibs_installer_V3.1";
+SERVICE="melibs_installer_V3.2";
 echo "${red}${bg_white}${ng}Comenzando instalacion...${reset}";
 cd /home/uslu/;
 
@@ -27,7 +27,7 @@ echo "Parchando Modulos...";
   sudo service AdsPlayer stop;
   sudo rm -rf /home/uslu/adsplayer;
   sudo rm /etc/init.d/AdsPlayer;
-  sudo cp /home/uslu/melibs/AdsPlayer /etc/init.d/AdsPlayer;
+  sudo cp /home/uslu/melibs_r/AdsPlayer /etc/init.d/AdsPlayer;
   sudo chmod +x /etc/init.d/AdsPlayer;
   sudo update-rc.d AdsPlayer defaults;
   sudo systemctl enable AdsPlayer;
